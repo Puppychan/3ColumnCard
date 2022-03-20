@@ -37,8 +37,8 @@ Mobile window size at the bottom:
 
 ### Links
 
-- Solution URL: [My solution URL](https://www.frontendmentor.io/solutions/order-summary-component-challenge-hub-DDUHwjigY)
-- Live Site URL: [My product URL]()
+- Solution URL: [My solution URL](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-/hub/3column-card-component-JyBa_F7Rr)
+- Live Site URL: [My product URL](https://puppychan.github.io/3ColumnCard/)
 
 ## My process
 
