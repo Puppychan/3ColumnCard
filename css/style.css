@@ -26,6 +26,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     
 }
 
@@ -153,4 +154,27 @@ main {
     cursor: pointer;
 }
 /* end of card luxury */
+/* end of cards */
 
+
+/* start of contain footer */
+#contain__footer {
+    position: absolute;
+    bottom: 3em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contain__footer-text {
+    font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+}
+.contain__footer-text-link {
+    text-decoration: none;
+    color:hsl(25, 60%, 50%);
+}
+.contain__footer-text-link:hover {
+    color: hsl(25, 59%, 31%);
+}
+/* end of contain footer */
