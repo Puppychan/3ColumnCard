@@ -27,13 +27,13 @@ Users should be able to:
 ### Screenshot
 
 Desktop window size:
-![Desktop Size Solution](./assets/readme/desktop-win-size.png)
+![Desktop Size Solution](./images/readme/desktop-win-size.png)
 
 Mobile window size at the top of the page:
-![Mobile Size Solution](./assets/readme/mobile-win-size-start.png)
+![Mobile Size Solution](./images/readme/mobile-win-size-start.png)
 
 Mobile window size at the end of the page:
-![Mobile Size Solution](./assets/readme/mobile-win-size-end.png)
+![Mobile Size Solution](./images/readme/mobile-win-size-end.png)
 
 ### Links
 
