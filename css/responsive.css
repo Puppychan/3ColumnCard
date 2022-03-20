@@ -1,0 +1,44 @@
+
+@media screen and (max-width: 768px) {
+    :root {
+        --margin-height: 3em;
+    }
+    #contain {
+        height: auto;
+        /* overflow: scroll; */
+        align-items: flex-start;
+        /* flex-direction: column; */
+    }
+
+    .cards {
+        position: absolute;
+        top: var(--margin-height);
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        /* overflow: scroll; */
+
+    }
+    .card {
+        gap: 3em;
+        width: 60vw;
+        height: 80%;
+        min-height: 40rem;
+
+    }
+    .card-button {
+        height: 15%;
+    }
+    .cards:last-child {
+        margin-bottom: var(--margin-height);
+    }
+    /* .cards:last-child::after {
+        content: " ";
+        display: block;
+        width: 100vw;
+        height: 3em;
+        background-color: var(--very-light-gray);
+    } */
+}

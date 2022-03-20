@@ -1,0 +1,156 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 62.5%;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+}
+#contain {
+    height: 100%;
+    width: 100%;
+    background-color: var(--very-light-gray);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cards {
+    width: 80%;
+    max-width: 101rem;
+    height: 50%;
+    max-height: 50rem;
+    min-height: 40rem;
+    /* height: auto; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+/* start of card general */
+.card {
+    width: calc(100% / 3);
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    /* flex: 1; */
+
+    gap: 3em;
+    padding: 3em;
+
+    color: var(--very-light-gray);
+
+    /* overflow: hidden; */
+}
+.card-icon {
+    content: " ";
+    /* height: 10%; */
+    height: 4em;
+    width: 100%;
+    flex-shrink: 0;
+
+    background-position: left center;
+    background-size: 7em 100%;
+    background-repeat: no-repeat;
+}
+.card-header {
+    font-size: clamp(2.5rem, 2.5vw, 4.5rem);
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+}
+.card-paragraph {
+    font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+    color: var(--transparent-white);
+    overflow: scroll;
+    /* all 3 paragraphs same height */
+    flex: 1;
+    flex-shrink: 0;
+}
+.card-button {
+    width: 65%;
+    min-width: 13rem;
+    /* min-height: 3rem; */
+    height: 15%;
+    /* avoid changing height in button when paragraph overflow */
+    flex-shrink: 0;
+
+    background-color: var(--very-light-gray);
+    border: 0.2rem solid var(--very-light-gray);
+    border-radius: 3em;
+
+    font-size: clamp(1.5rem, 2.5vw, 1.7rem);
+}
+/* end of card general */
+
+/* start of card sedans */
+.cards__sedans {
+    background-color: var(--bright-orange);
+}
+.cards__sedans-icon {
+    background-image: url("./../images/icon-sedans.svg");
+}
+.cards__sedans-button {
+    color: var(--bright-orange);
+}
+.cards__sedans-button:hover {
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+    border-color: var(--very-light-gray);
+    cursor: pointer;
+}
+/* end of card sedans */
+
+/* start of card SUVs */
+.cards__suvs {
+    background-color: var(--dark-cyan);
+}
+.cards__suvs-icon {
+    background-image: url("./../images/icon-suvs.svg");
+}
+.cards__suvs-button {
+    color: var(--dark-cyan);
+}
+.cards__suvs-button:hover {
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray);
+    border-color: var(--very-light-gray);
+    cursor: pointer;
+}
+/* end of card SUVs */
+
+/* start of card luxury */
+.cards__luxury {
+    background-color: var(--very-dark-cyan);
+}
+.cards__luxury-icon {
+    background-image: url("./../images/icon-luxury.svg");
+}
+.cards__luxury-button {
+    color: var(--very-dark-cyan);
+}
+.cards__luxury-button:hover {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray);
+    border-color: var(--very-light-gray);
+    cursor: pointer;
+}
+/* end of card luxury */
+
