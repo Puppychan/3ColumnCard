@@ -1,48 +1,37 @@
 
 @media screen and (max-width: 768px) {
     :root {
-        --margin-height: 3em;
+        --margin-height: 5em;
     }
     #contain {
-        /* height: auto; */
-        /* height change when children height change */
-        overflow: auto;
+        height: auto;
         justify-content: flex-start;
-        /* align-items: flex-start; */
     }
 
     .cards {
+        width: 60%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
-        /* overflow: scroll; */
-        padding: 5rem 0;
 
+        margin: var(--margin-height) 0;
     }
     .card {
+        width: 100%;
+        min-height: 35rem;
         gap: 3em;
-        width: 70vw;
-        height: 80%;
-        min-height: 40rem;
 
     }
     .card-button {
-        height: 15%;
+        /* height: ; */
     }
     .cards:last-child {
         margin-bottom: var(--margin-height);
     }
-    /* .cards:last-child::after {
-        content: " ";
-        display: block;
-        width: 100vw;
-        height: 3em;
-        background-color: var(--very-light-gray);
-    } */
 
     #contain__footer {
-        display: none;
-
+        position: static;
+        margin-bottom: 2em;
     }
 }

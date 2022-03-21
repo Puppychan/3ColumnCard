@@ -41,9 +41,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
+
+
+    /*  */
     border-radius: 10px;
     overflow:hidden;
     
+}
+.cards:first-child {
+
 }
 /* start of card general */
 .card {
