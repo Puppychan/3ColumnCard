@@ -33,14 +33,16 @@ main {
 .cards {
     width: 80%;
     max-width: 101rem;
-    height: 50%;
-    max-height: 50rem;
-    min-height: 40rem;
+    /* height: 50%; */
+    /* max-height: 50rem; */
+    /* min-height: 40rem; */
     /* height: auto; */
     
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    border-radius: 10px;
+    overflow:hidden;
     
 }
 /* start of card general */
@@ -76,11 +78,13 @@ main {
     font-size: clamp(2.5rem, 2.5vw, 4.5rem);
     text-transform: uppercase;
     color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
 }
 .card-paragraph {
     font-size: clamp(1.4rem, 2.5vw, 1.6rem);
     color: var(--transparent-white);
     overflow: scroll;
+    line-height: 1.5;
     /* all 3 paragraphs same height */
     flex: 1;
     flex-shrink: 0;
@@ -89,7 +93,7 @@ main {
     width: 65%;
     min-width: 13rem;
     /* min-height: 3rem; */
-    height: 15%;
+    height: 3em;
     /* avoid changing height in button when paragraph overflow */
     flex-shrink: 0;
 
